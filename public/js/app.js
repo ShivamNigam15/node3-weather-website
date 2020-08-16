@@ -4,7 +4,7 @@ fetch('http://puzzle.mead.io/puzzle').then((res) => {
     })
 })
 
-fetch('http://localhost:3000/weather?addres=Lucknow').then((res,err) => {
+fetch('/weather?addres=Lucknow').then((res,err) => {
     if(err){
         console.log(err)
     }else{
@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    fetch('http://localhost:3000/weather?address='+search.value).then((res) => {
+    fetch('/weather?address='+search.value).then((res) => {
             res.json().then((data) => {
                 if(data.Error){
                     messageOne.textContent = data.Error;
