@@ -32,7 +32,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 }else{
                     console.log(2)
                     messageOne.textContent = 'Address: '+data.address
-                    messageTwo.textContent = 'Temperature: '+data.temperature+'<br />Weather Description: '+data.weather_descriptions+'<br />Humidity: '+data.humidity 
+                    messageTwo.textContent = 'Temperature: '+data.temperature+' <br> Weather Description: '+data.weather_descriptions+' <br> Humidity: '+data.humidity 
                 }
                 
             }) 

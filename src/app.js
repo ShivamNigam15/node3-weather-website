@@ -59,10 +59,10 @@ app.get('/weather', (req, res) => {
               return console.log('Error',error)
             }
             return res.send({
-                forecast: 'It is snowing',
-                location: 'Philadelphia',
                 address: place_name,
-                temperature:forCastData
+                temperature:forCastData.temperature,
+                weather_descriptions : forCastData.weather_descriptions,
+                humidity : forCastData.humidity
             })
           })
       })
